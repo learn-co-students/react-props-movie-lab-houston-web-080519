@@ -29,12 +29,14 @@ const posterMap = {
 
 export default class MovieCard extends Component {
 
-  
+
   render() {
   
     return (
       <div className="movie-card">
-        {}
+        {this.props.movieData.map((data) =>
+            <CardFront />
+          )}
         <CardFront/>
         <CardBack/>
       </div>

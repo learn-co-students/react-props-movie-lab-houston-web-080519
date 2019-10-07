@@ -5,8 +5,8 @@ import movieData from './data.js'
 export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
-   return movieData.map((data, id) => 
-       <MovieCard key={id} data={data}/>
+   return movieData.map((movieData, id) => 
+       <MovieCard id={id} data={movieData}/>
     ) };
 
   render() {
